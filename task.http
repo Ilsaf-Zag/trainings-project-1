@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/tasks
+###
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "completed": false
+}
+
+###
+DELETE http://localhost:8080/api/tasks
