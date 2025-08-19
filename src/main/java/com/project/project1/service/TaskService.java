@@ -16,7 +16,10 @@ public class TaskService {
         return taskRepository.findAll();
     }
 
-    public Task createTask(Task task){
+    public Task createTask(String title){
+        Task task = new Task();
+        task.setTitle(title);
+
         return taskRepository.save(task);
     }
 
